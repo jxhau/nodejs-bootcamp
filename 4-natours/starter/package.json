@@ -4,12 +4,17 @@
   "description": "learning node.js, express.js",
   "main": "app.js",
   "scripts": {
-    "start": "nodemon server.js"
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev": "cross-env NODE_ENV=development node server.js"
   },
   "author": "jxhau",
   "license": "ISC",
   "dependencies": {
     "express": "^4.18.2",
-    "morgan": "^1.10.0"
+    "morgan": "^1.10.0",
+    "webpack": "^5.88.2"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
   }
 }
